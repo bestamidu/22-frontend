@@ -1,7 +1,7 @@
 let number=prompt("Moi ban nhap day so ");
 let check = true;
 for (let i = 0 ; i< number.length ; i++){
-    if( number < '0' || number > '9'){
+    if( number[i] < '0' || number[i] > '9'){
         check = false;
         break;
     }
@@ -15,7 +15,6 @@ if(check){
         }
     }
     console.log(` so lon nhat trong day la ${max}`);
-    console.log(` day so nay khong dung dinh dang ${arrNew} `);
 }else {
     console.log(" day so nay khong dung dinh dang");
 }
